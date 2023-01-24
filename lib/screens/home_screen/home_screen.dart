@@ -181,6 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
 
                   /// Image
+                  const SizedBox(width: 8.0),
                   Expanded(
                     child: Image.asset(
                       ConstImages.kBackgroundHome,
