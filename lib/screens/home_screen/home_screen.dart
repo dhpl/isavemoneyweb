@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         const SizedBox(height: 20),
                         Text(
-                          "How do you manage your budget and watch every dollar? With Monefy, your financial organizer and finance tracker, it’s simple. Each time you buy a coffee, pay a bill, or make a daily purchase, you only need to add each expense you have — that's it! Just add new records each time you make a purchase. It’s done in one click, so you don’t need to fill anything except the amount. Tracking daily purchases, bills, and everything else you spend money on has never been so quick and enjoyable with this money manager.",
+                          "How do you manage your budget and watch every dollar?\nWith Monefy, your financial organizer and finance tracker, it’s simple. Each time you buy a coffee, pay a bill, or make a daily purchase, you only need to add each expense you have — that's it! Just add new records each time you make a purchase. It’s done in one click, so you don’t need to fill anything except the amount. Tracking daily purchases, bills, and everything else you spend money on has never been so quick and enjoyable with this money manager.",
                           style: ShareStyles.normal.copyWith(
                             color: Colors.grey,
                           ),

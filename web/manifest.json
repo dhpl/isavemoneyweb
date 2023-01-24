@@ -1,6 +1,6 @@
 {
-    "name": "save_money_web",
-    "short_name": "save_money_web",
+    "name": "iSaveMoney",
+    "short_name": "iSaveMoney - Budget & Expenses",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
