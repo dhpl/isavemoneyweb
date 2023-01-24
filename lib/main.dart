@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:save_money_web/home_screen.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:get/route_manager.dart';
+import 'package:save_money_web/generated/locales.g.dart';
+import 'package:save_money_web/route_generator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +13,38 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'iSaveMoney',
+    return GetMaterialApp(
+      title: 'iSaveMoney - Budget & Expenses',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: const MaterialColor(
+          0xffff3378,
+          {
+            50: Color(0xffff3378),
+            100: Color(0xffff3378),
+            200: Color(0xffff3378),
+            300: Color(0xffff3378),
+            400: Color(0xffff3378),
+            500: Color(0xffff3378),
+            600: Color(0xffff3378),
+            700: Color(0xffff3378),
+            800: Color(0xffff3378),
+            900: Color(0xffff3378),
+          },
+        ),
       ),
+      locale: const Locale('en', 'US'), //Get.deviceLocale,
+      translationsKeys: AppTranslation.translations,
+      supportedLocales: const [Locale('en', 'US')],
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      fallbackLocale: const Locale('en', 'US'),
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      onGenerateRoute: RouteGenerator.generateRoute,
+      initialRoute: '/',
+      navigatorKey: Get.key,
     );
   }
 }
