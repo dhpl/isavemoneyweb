@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'iSaveMoney - Budget & Expenses',
+      // title: 'iSaveMoney - Budget & Expenses',
       theme: ThemeData(
         primarySwatch: const MaterialColor(
           0xffff3378,
